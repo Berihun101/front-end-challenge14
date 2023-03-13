@@ -1,0 +1,310 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+*::after,*::before{
+  box-sizing: border-box;
+}
+img{
+  display: block;
+}
+input,button{
+  font-family: inherit;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+}
+.header div{
+  display: flex;
+  grid-gap: 40px;
+}
+.header div a{
+  text-decoration: none;
+  color: hsl(0, 0%, 75%);
+  font-family: 'Raleway', sans-serif;
+}
+.section1{
+  display: flex;
+ padding: 0 3rem;
+ align-items: center;
+ margin-bottom: 100px;
+}
+.section1 h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.8rem;
+}
+.section1  p{
+  font-family: 'Raleway', sans-serif;
+  color: hsl(0, 0%, 25%);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.section1 input{
+  padding: 0.36rem;
+  border: 3px solid  hsl(0, 0%, 75%);
+  width: 200px;
+  font-family: 'Raleway', sans-serif;
+}
+.section1 button{
+  width: 200px;
+  padding: 0.56rem;
+  background-color:  hsl(224, 93%, 58%);
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ color: white;
+ font-family: 'Raleway', sans-serif;
+ margin-left: 10px;
+}
+.section1 div{
+  flex: 1;
+}
+
+.illustration1{
+  background-image: url('images/illustration-1.svg');
+  background-position:center;
+  object-fit: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.section2{
+  background-image: url('images/bg-curve-desktop.svg');
+  background-position:center;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+.section2 h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.2rem;
+
+}
+.section2 p{
+  font-family: 'Raleway', sans-serif;
+  color: hsl(0, 0%, 25%);
+  font-size: 0.9rem;
+  width: 70%;
+}
+.section2 p:first-of-type:not(.name-testimonial){
+  margin-bottom: 15px;
+}
+.link{
+  display: flex;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+.link a{
+  text-decoration: none;
+  color: hsl(170, 45%, 43%);
+  font-family: 'Raleway', sans-serif;
+}
+.content{
+  flex: 1;
+  padding: 5rem 0;
+}
+.bg-image{
+  background-image: url('images/illustration-2.svg');
+  background-position:center;
+  object-fit: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+   padding: 8rem 0;
+   height: 300px;
+  flex: 1;
+}
+.qoute{
+  background-color: white;
+  border-radius: 10px;
+  width: 60%;
+  padding: 1.5rem 1.5rem;
+}
+.qoute p{
+  width: 100%;
+}
+.qoute .testimonial{
+  display: flex;
+  grid-gap: 5px;
+}
+.testimonial img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.section3{
+  display: flex;
+  background-color: hsl(238, 22%, 44%);
+  padding: 3.5rem 3rem;
+}
+.section3 div button{
+  display: block;
+  margin-top: 10px;
+  width: 150px;
+  padding: 0.56rem;
+  background-color:  hsl(224, 93%, 58%);
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ color: white;
+ font-family: 'Open Sans', sans-serif;
+}
+.section3 div input{
+  width: 300px;
+  border: none;
+ padding: 0.4rem;
+  font-family: 'Open Sans', sans-serif;
+}
+.section3 h4{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 15px;
+}
+.section3 p{
+font-family: 'Open Sans', sans-serif;
+color: white;
+width: 60%;
+font-size: 0.9rem;
+}
+.section3 div{
+  flex: 1;
+}
+.section4{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: hsl(243, 87%, 12%);
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding: 3rem 3rem;
+}
+.section4 p{
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.section4 p:hover{
+  color:hsl(170, 45%, 43%);
+}
+.section4 img{
+  margin-bottom: 10px;
+
+}
+.section4 div button{
+  border-radius: 50%;
+  padding: 0.4rem 0.5rem;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.section4 div button i{
+  font-size: 1.3rem;
+  color: white;
+}
+.section4 div button i:hover{
+color:hsl(170, 45%, 43%);
+}
+
+@media (max-width:950px){
+  .section1 h3 {
+    font-size: 1.8rem;
+  }
+  .section1 button{
+    margin-top: 15px;
+  }
+  .qoute{
+    width: 80%;
+  }
+  .section4{
+    grid-gap: 20px;
+  }
+  .section4 div button i{
+    font-size: 1.1rem;
+
+  }
+}
+@media (max-width:630px){
+  .header img{
+ width: 80px;
+ margin-right: 10px;
+  }
+  .header div{
+ grid-gap: 15px;
+ flex-wrap: wrap;
+  }
+  .header{
+    padding: 1.5rem 0.5rem;
+  }
+  .section1{
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 0 1.1rem;
+  }
+  .section1 div:first-child{
+    order: 2;
+    text-align: center;
+
+  }
+  .section1 button{
+    width: 90%;
+  }
+  .section1 input{
+    width: 90%;
+  }
+  .illustration1{
+    order: 1;
+
+  }
+  .section2{
+    background-image: url('images/bg-curve-mobile.svg');
+    background-position:center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 0 1.1rem;
+
+
+  }
+  .section2 div:first-child{
+    order: 2;
+
+
+  }
+  .section2 h3{
+    font-size: 1.2rem;
+  }
+  .section2 p{
+    width: 100%;
+  }
+  .qoute{
+    width: 100%;
+  }
+  .section3{
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 1.5rem 1.1rem;
+    text-align: center;
+  }
+  .section3 p{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .section3 div button{
+    width: 70%;
+    margin: 15px auto;
+  }
+  .section3 div input{
+      width: 70%;
+  }
+  .section4{
+    grid-template-columns: 1fr;
+  }
+}
